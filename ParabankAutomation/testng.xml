@@ -1,0 +1,14 @@
+<suite name="ParaBank Suite">
+    <test name="Regression Tests">
+        <classes>
+            <class name="testcases.RegistrationTest"/>
+    		<class name="testcases.LoginTest"/>
+    		<class name="testcases.OpenAccountTest"/>
+    		<class name="testcases.AccountOverviewTest"/> 
+    		<class name="testcases.TransferFundsTest"/>
+    		<class name="testcases.BillPayTest"/>
+    		<class name="testcases.LogoutTest"/>
+    		<class name="testcases.NegativeLoginTest"/>
+        </classes>
+    </test>
+</suite>

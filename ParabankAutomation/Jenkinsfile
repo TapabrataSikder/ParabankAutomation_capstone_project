@@ -1,0 +1,33 @@
+pipeline {
+    agent any
+    
+    tools {
+        maven 'maven3' 
+        jdk 'java' 
+    }
+    
+    stages {
+        stage('Checkout') {
+            steps {
+                echo 'Checking out code from GitHub...'
+            }
+        }
+        
+        stage('Build & Test') {
+            steps {
+                // Navigate into the subdirectory where pom.xml is located
+                dir('ParabankAutomation') {
+                    // This runs your tests using the Maven installed on your local machine
+                    bat 'mvn clean test'
+                }
+            }
+        }
+    }
+    
+    post {
+        always {
+            // Publish test results
+            archiveArtifacts artifacts: 'ParabankAutomation/target/surefire-reports/*.xml', fingerprint: true
+        }
+    }
+}

@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>TestNG:  Regression Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Regression Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Jun 14 13:12:46 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>56 seconds (56500 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.RegistrationTest.testRegistration()'><b>testRegistration</b><br>Test class: testcases.RegistrationTest<br>Parameters: TestNG 12, User 12, 3/12 Main Street, Kolkata, Bengal, 700060.0, 5.46879213E9, 987-123, testnguser12, admin123, admin123</td>
+<td></td>
+<td>2</td>
+<td>testcases.RegistrationTest@1ce24091</td></tr>
+<tr>
+<td title='testcases.AccountOverviewTest.testAccountOverviewDetails()'><b>testAccountOverviewDetails</b><br>Test class: testcases.AccountOverviewTest<br>Parameters: testnguser12, admin123</td>
+<td></td>
+<td>1</td>
+<td>testcases.AccountOverviewTest@bccb269</td></tr>
+<tr>
+<td title='testcases.NegativeLoginTest.testNegativeLogin()'><b>testNegativeLogin</b><br>Test class: testcases.NegativeLoginTest<br>Parameters: invaliduser, invalidpass</td>
+<td></td>
+<td>0</td>
+<td>testcases.NegativeLoginTest@13b6aecc</td></tr>
+<tr>
+<td title='testcases.LogoutTest.testLogout()'><b>testLogout</b><br>Test class: testcases.LogoutTest</td>
+<td></td>
+<td>10</td>
+<td>testcases.LogoutTest@7d8704ef</td></tr>
+<tr>
+<td title='testcases.TransferFundsTest.testTransferFunds()'><b>testTransferFunds</b><br>Test class: testcases.TransferFundsTest<br>Parameters: testnguser12, admin123</td>
+<td></td>
+<td>4</td>
+<td>testcases.TransferFundsTest@609cd4d8</td></tr>
+<tr>
+<td title='testcases.BillPayTest.testBillPayment()'><b>testBillPayment</b><br>Test class: testcases.BillPayTest<br>Parameters: testnguser12, admin123</td>
+<td></td>
+<td>5</td>
+<td>testcases.BillPayTest@17f7cd29</td></tr>
+<tr>
+<td title='testcases.OpenAccountTest.testOpenNewAccount()'><b>testOpenNewAccount</b><br>Test class: testcases.OpenAccountTest<br>Parameters: testnguser12, admin123</td>
+<td></td>
+<td>2</td>
+<td>testcases.OpenAccountTest@66d18979</td></tr>
+<tr>
+<td title='testcases.LoginTest.validLogin()'><b>validLogin</b><br>Test class: testcases.LoginTest<br>Parameters: testnguser12, admin123</td>
+<td></td>
+<td>1</td>
+<td>testcases.LoginTest@6913c1fb</td></tr>
+</table><p>
+</body>
+</html>
