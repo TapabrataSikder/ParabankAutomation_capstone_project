@@ -61,12 +61,14 @@ ParabankAutomation/
 │       │   └── utilities/                     # Helper/utility classes
 │       │       ├── ConfigReader.java
 │       │       ├── ExcelUtils.java
+│       │       ├── ExtentManager.java
 │       │       ├── ScreenshotUtil.java
 │       │       └── TestListener.java
 │       └── resources/
 │           ├── config.properties              # App URL & browser config
 │           └── TestData.xlsx                  # Excel test data (Sheet1, Sheet2, Sheet3)
 │
+├── Reports/                                   # Extent Report
 ├── screenshots/                               # Auto-captured screenshots
 ├── target/                                    # Maven build output
 ├── test-output/                               # TestNG reports
