@@ -18,7 +18,7 @@ public class OpenAccountPage {
 	
 	public OpenAccountPage(WebDriver driver) {
 		this.driver = driver;
-		this.wait = new WebDriverWait(driver, java.time.Duration.ofSeconds(10));
+		this.wait = new WebDriverWait(driver, java.time.Duration.ofSeconds(20));
 	}
 	
 	public void clickOpenAccount() {

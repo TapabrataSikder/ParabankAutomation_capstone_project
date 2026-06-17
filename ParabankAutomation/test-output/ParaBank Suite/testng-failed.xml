@@ -3,48 +3,20 @@
 <suite name="Failed suite [ParaBank Suite]">
   <test thread-count="5" name="Regression Tests(failed)">
     <classes>
-      <class name="testcases.TransferFundsTest">
-        <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="testTransferFunds"/>
-        </methods>
-      </class> <!-- testcases.TransferFundsTest -->
-      <class name="testcases.BillPayTest">
-        <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="testBillPayment"/>
-        </methods>
-      </class> <!-- testcases.BillPayTest -->
       <class name="testcases.OpenAccountTest">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="testOpenNewAccount"/>
+          <include name="testOpenNewAccount" invocation-numbers="0"/>
         </methods>
       </class> <!-- testcases.OpenAccountTest -->
-      <class name="testcases.LoginTest">
+      <class name="testcases.RegistrationTest">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="validLogin" invocation-numbers="0"/>
+          <include name="testRegistration" invocation-numbers="0"/>
         </methods>
-      </class> <!-- testcases.LoginTest -->
-      <class name="testcases.AccountOverviewTest">
-        <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="testAccountOverviewDetails"/>
-        </methods>
-      </class> <!-- testcases.AccountOverviewTest -->
-      <class name="testcases.LogoutTest">
-        <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="testLogout"/>
-        </methods>
-      </class> <!-- testcases.LogoutTest -->
+      </class> <!-- testcases.RegistrationTest -->
     </classes>
   </test> <!-- Regression Tests(failed) -->
 </suite> <!-- Failed suite [ParaBank Suite] -->
